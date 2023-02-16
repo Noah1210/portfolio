@@ -42,3 +42,5 @@ school.addEventListener('click', () => {
     document.getElementById("qualification_school").style.display = "inline-flex";
 })
 
+// Adding an image slider
+
