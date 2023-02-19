@@ -3,6 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -18,13 +19,20 @@
         <nav class="navigation" id="navi">
             <h1 class="name">Noah Pardon</h1>
             <ul class="nav__links">
-                <li class="links"><a href="#home">Home</a></li>
-                <li class="links"><a href="#education">Qualification</a></li>
-                <li class="links"><a href="#project">Projects</a></li>
-                <li class="links"><a href="#about_me">About</a></li>
-                <li class="links"><a href="#contact_me">Contact</a></li>
+                <li class="links"><a class="home" href="#home">Home</a></li>
+                <li class="links"><a class="education" href="#education">Qualification</a></li>
+                <li class="links"><a class="projects" href="#project">Projects</a></li>
+                <li class="links"><a class="about" href="#about_me">About</a></li>
+                <li class="links"><a class="contact" href="#contact_me">Contact</a></li>
             </ul>
             <div class="logos">
+                <div class="language_container">
+                    <div class="language">
+                        <a  language="english" class="current" id="enSel">English</a>
+                        <a  language="french" class="inactive" id="frSel">Francais</a>
+                    </div>
+                    <div class="switch_button"></div>
+                </div>
                 <a class="github" href="https://github.com/Noah1210" target="_blank"><i class='bx bxl-github'></i><span
                         class="logo">Github</span></a>
                 <a class="linkedin" href="https://www.linkedin.com/in/noah-pardon-9b9275239/"><i
@@ -39,7 +47,10 @@
         <div class="content">
             <div class="intro">
                 <h1>Hi, I'm Noah Pardon</h1>
-                <h3>I'm a Software <span class="engineer">Engineer</span> </h3>
+                <div class="intro_subtitle">
+                    <h3 class="software">I'm a Software <h3 class="engineer">Engineer</h3>
+                    </h3>
+                </div>
             </div>
             <img src="images/headerPicture.jpg" alt="" class="contact_img">
             <div class="arrow">
@@ -60,14 +71,14 @@
         <div class="qualification_container">
             <div class="qualification_tabs">
                 <button type="button" class="button school">
-                    <span class="button_text">Education</span>
+                    <span class="button_text wowzers">Education</span>
                     <span class="button_icon">
                         <i class='bx bxs-graduation qualification_icon'></i>
                     </span>
                 </button>
 
                 <button type="button" class="button work">
-                    <span class="button_text">Work</span>
+                    <span class="button_text wowz">Work</span>
                     <span class="button_icon">
                         <i class='bx bxs-briefcase qualification_icon'></i>
                     </span>
@@ -76,17 +87,23 @@
 
             <div class="qualification_sections" id="qualification_school">
                 <div class="qualification_info">
-                    <h2 class="qualification_title">Computer Engineer</h2>
-                    <p>I am currently in my second year of higher education at La Salle in France. Where I am currently
-                        studying for the French equivalent of a BTEC Higher National Diploma.
-                        <br> In which I specialize in software solutions and business applications.
-                    </p>
+                    <h2 class="qualification_title" id="qualification_computer">Computer Engineer</h2>
+                    <div class="qualification_school_p">
+                        <p class="qualification_computer_info">I am currently in my second year of higher education at
+                            La Salle in France. Where I am currently
+                            studying for the French equivalent of a BTEC Higher National Diploma.
+                        </p>
+                        <p class="qualification_computer_info_2">In which I specialize in software solutions and
+                            business applications.
+                        </p>
+                    </div>
                     <i class='bx bxs-calendar calendar_icon'><span class="text">2021 - 2023</span></i>
                 </div>
 
                 <div class="qualification_info">
-                    <h2 class="qualification_title">High school Diploma</h2>
-                    <p>My high school diploma that I realized in France at Paulette Nardal institute. With computer
+                    <h2 class="qualification_title" id="qualification_high">High school Diploma</h2>
+                    <p class="qualification_high_info">My high school diploma that I realized in France at Paulette
+                        Nardal institute. With computer
                         science as my specialization.</p>
                     <i class='bx bxs-calendar calendar_icon'><span class="text">2019 - 2021</span></i>
                 </div>
@@ -94,19 +111,28 @@
 
             <div class="qualification_sections" id="qualification_work">
                 <div class="qualification_info">
-                    <h2 class="qualification_title">Software Engineer Internship</h2>
-                    <p>My internship at the company Mboa Digital where I helped in the creation of a timesheet reporting
-                        tool using the company's API sent to the clients each month.
-                        <br>For this purpose I created a full-stack web app using Anuglar and Python Flask
-                    <p>
-                        <i class='bx bxs-calendar calendar_icon'><span class="text">may 2022 - july 2022</span></i>
+                    <h2 class="qualification_title" id="qualification_software">Software Engineer Internship</h2>
+                    <div class="qualification_school_p">
+                        <p class="qualification_software_info">My internship at the company Mboa Digital where I helped
+                            in
+                            the creation of a timesheet reporting
+                            tool using the company's API sent to the clients each month.
+                        </p>
+                        <p class="qualification_software_info_2">For this purpose I created a full-stack web app using
+                            Anuglar and Python Flask.
+                        </p>
+                    </div>
+                    <i class='bx bxs-calendar calendar_icon'><span class="text" id="software_date">may 2022 - july
+                            2022</span></i>
                 </div>
 
                 <div class="qualification_info">
-                    <h2 class="qualification_title">Installation of software</h2>
-                    <p>For my second internship, I helped the customers migrate and install the softwares that the
+                    <h2 class="qualification_title" id="qualification_installation">Software installation</h2>
+                    <p class="qualification_installation_info">For my second internship, I helped the customers migrate
+                        and install the softwares that the
                         company provided. </p>
-                    <i class='bx bxs-calendar calendar_icon'><span class="text">Jan 2023 - Feb 2023</span></i>
+                    <i class='bx bxs-calendar calendar_icon'><span class="text" id="installation_date">Jan 2023 - Feb
+                            2023</span></i>
                 </div>
             </div>
         </div>
@@ -257,7 +283,8 @@
             <h3>Noah Pardon</h3>
             <div class="footer_socials">
                 <a class="github" href="https://github.com/Noah1210" target="_blank"><i class='bx bxl-github'></i></a>
-                <a class="linkedin" href="https://www.linkedin.com/in/noah-pardon-9b9275239/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                <a class="linkedin" href="https://www.linkedin.com/in/noah-pardon-9b9275239/" target="_blank"><i
+                        class="ri-linkedin-box-fill"></i></a>
             </div>
         </div>
     </footer>

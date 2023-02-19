@@ -104,6 +104,7 @@ header {
 
 .logos {
     display: flex;
+    align-items: center;
 }
 
 .logos a {
@@ -124,6 +125,53 @@ header {
     color: rgb(16, 138, 251);
 }
 
+.language_container {
+    position: relative;
+    width: 191px;
+    height: 40px;
+    background: rgba(1, 37, 70, 0.06);
+    border-radius: 40px;
+}
+
+.language{
+    display: flex;
+    top: 2px;
+    position: absolute;
+    z-index: 2;
+}
+
+.language a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(103, 124, 144);
+    width: 65px;
+    height: 36px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.switch_button {
+    width: 96px;
+    height: 36px;
+    background: rgb(255, 255, 255);
+    border-radius: 40px;
+    position: absolute;
+    top: 2px;
+    box-shadow: rgb(0 0 0 / 12%) 0px 3px 8px, rgb(0 0 0 / 4%) 0px 3px 1px;
+    left: 3px;
+    right: auto;
+}
+
+.switch_button.fr {
+    left: auto;
+    right: 3px;
+}
+
 #menu-icon {
     font-size: 35px;
     color: black;
@@ -137,6 +185,14 @@ header {
     align-items: center;
 }
 
+
+.intro_subtitle{
+    display: flex;
+}
+
+.intro_subtitle h3{
+    padding-right: 20px;
+}
 
 .content h1 {
     color: black;
