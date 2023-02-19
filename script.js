@@ -33,13 +33,13 @@ work.addEventListener('click', () => {
     work.style.backgroundColor = 'rgb(14, 101, 182)';
     school.style.backgroundColor = 'rgb(16, 138, 251)';
     document.getElementById("qualification_school").style.display = "none";
-    document.getElementById("qualification_work").style.display = "inline-flex";
+    document.getElementById("qualification_work").style.display = "flex";
 })
 school.addEventListener('click', () => {
     school.style.backgroundColor = 'rgb(14, 101, 182)';
     work.style.backgroundColor = 'rgb(16, 138, 251)';
     document.getElementById("qualification_work").style.display = "none";
-    document.getElementById("qualification_school").style.display = "inline-flex";
+    document.getElementById("qualification_school").style.display = "flex";
 })
 
 // Adding an image slider
