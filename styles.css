@@ -674,6 +674,10 @@ display: none;
     text-align: center;
 }
 
+.bot{
+    display: none;
+}
+
 
 
 @media (max-width: 1425px) {

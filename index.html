@@ -228,9 +228,10 @@
                         <p>You can send me an email at pardon.noah12802@gmail.com or find me on github and linkedIn.
                         </p>
                     </div>
-                    <form name="contact" method="post" data-netlify="true" onsubmit="submit">
+                    <form name="contact" method="post" data-netlify="true" onsubmit="submit" data-netlify-honeypot="bot-field">
                         <div class="contact_content">
                             <div class="contact_name">
+                                <input class="bot" name="bot-field">
                                 <input type="text" id="fname" name="firstname" placeholder="First Name" required name="firstname">
                                 <input type="text" id="lname" name="lastname" placeholder="Last Name" required name="lastname">
                             </div>
