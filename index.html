@@ -75,14 +75,17 @@
             <div class="qualification_sections" id="qualification_school">
                 <div class="qualification_info">
                     <h2 class="qualification_title">Computer Engineer</h2>
-                    <p>I am currently in my second year of higher education at La Salle in France. Where I am currently studying for the French equivalent of a BTEC Higher National Diploma.
-                        <br> In which I specialize in software solutions and business applications.</p>
+                    <p>I am currently in my second year of higher education at La Salle in France. Where I am currently
+                        studying for the French equivalent of a BTEC Higher National Diploma.
+                        <br> In which I specialize in software solutions and business applications.
+                    </p>
                     <i class='bx bxs-calendar calendar_icon'><span class="text">2021 - 2023</span></i>
                 </div>
 
                 <div class="qualification_info">
                     <h2 class="qualification_title">High school Diploma</h2>
-                    <p>My high school diploma that I realized in France at Paulette Nardal institute. With computer science as my specialization.</p>
+                    <p>My high school diploma that I realized in France at Paulette Nardal institute. With computer
+                        science as my specialization.</p>
                     <i class='bx bxs-calendar calendar_icon'><span class="text">2019 - 2021</span></i>
                 </div>
             </div>
@@ -90,14 +93,17 @@
             <div class="qualification_sections" id="qualification_work">
                 <div class="qualification_info">
                     <h2 class="qualification_title">Software Engineer Internship</h2>
-                    <p>My internship at the company Mboa Digital where I helped in the creation of a timesheet reporting tool using the company's API sent to the clients each month.
-                        <br>For this purpose I created a full-stack web app using Anuglar and Python Flask<p>
-                    <i class='bx bxs-calendar calendar_icon'><span class="text">may 2022 - july 2022</span></i>
+                    <p>My internship at the company Mboa Digital where I helped in the creation of a timesheet reporting
+                        tool using the company's API sent to the clients each month.
+                        <br>For this purpose I created a full-stack web app using Anuglar and Python Flask
+                    <p>
+                        <i class='bx bxs-calendar calendar_icon'><span class="text">may 2022 - july 2022</span></i>
                 </div>
-                
+
                 <div class="qualification_info">
                     <h2 class="qualification_title">Installation of software</h2>
-                    <p>For my second internship, I helped the customers migrate and install the softwares that the company provided.  </p>
+                    <p>For my second internship, I helped the customers migrate and install the softwares that the
+                        company provided. </p>
                     <i class='bx bxs-calendar calendar_icon'><span class="text">Jan 2023 - Feb 2023</span></i>
                 </div>
             </div>
@@ -204,7 +210,6 @@
                     <i class='bx bxl-bootstrap'></i>
                     <i class='bx bxl-git'></i>
                     <i class='bx bxl-github'></i>
-
                 </div>
                 <button onclick="window.location.href='#contact_me';" type="button" class="button contact">
                     <span class="contact_text">Contact</span>
@@ -223,17 +228,19 @@
                         <p>You can send me an email at pardon.noah12802@gmail.com or find me on github and linkedIn.
                         </p>
                     </div>
-                    <div class="contact_content">
-                        <div class="contact_name">
-                            <input type="text" id="fname" name="firstname" placeholder="First Name" required>
-                            <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
+                    <form name="contact" method="post" data-netlify="true" onsubmit="submit">
+                        <div class="contact_content">
+                            <div class="contact_name">
+                                <input type="text" id="fname" name="firstname" placeholder="First Name" required name="firstname">
+                                <input type="text" id="lname" name="lastname" placeholder="Last Name" required name="lastname">
+                            </div>
+                            <input type="email" id="mail" name="email" placeholder="Email" required name="email">
+                            <input type="text" id="msg" name="message" placeholder="Write a message.." name="message">
+                            <button type="submit" class="button contact">
+                                <span class="contact_text">Submit</span>
+                            </button>
                         </div>
-                        <input type="email" id="mail" name="email" placeholder="Email" required>
-                        <input type="text" id="msg" name="message" placeholder="Write a message..">
-                        <button type="button" class="button contact">
-                            <span class="contact_text">Submit</span>
-                        </button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
