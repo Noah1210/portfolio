@@ -79,6 +79,20 @@ const qualification_installation = document.querySelector('.qualification #quali
 const qualification_installation_info = document.querySelector('.qualification .qualification_installation_info');
 const installation_date = document.querySelector('.qualification #installation_date');
 
+const project_title = document.querySelector('.projects .project_title');
+const project_subtitle = document.querySelector('.projects .project_subtitle');
+const projects_gmagro_title = document.querySelector('.projects #projects_gmagro_title');
+const projects_gmagro_description = document.querySelector('.projects #projects_gmagro_description');
+const projects_tech = document.querySelector('.projects .projects_tech');
+const projects_tech_2 = document.querySelector('#project_container_2 .projects_tech');
+const projects_demo = document.querySelector('.projects .projects_demo');
+const projects_demo_2 = document.querySelector('#project_container_2 .projects_demo');
+const projects_code = document.querySelector('.projects .projects_code');
+const projects_code_2 = document.querySelector('#project_container_2 .projects_code');
+const projects_view = document.querySelector('.projects .projects_view');
+const projects_portfolio_title = document.querySelector('.projects #projects_portfolio_title');
+const projects_portfolio_description = document.querySelector('.projects #projects_portfolio_description');
+
 link.forEach(el => {
     el.addEventListener('click', () => {
 
@@ -122,9 +136,23 @@ link.forEach(el => {
         qualification_installation_info.textContent = data[attr].qualification.qualification_installation_info;
         installation_date.textContent = data[attr].qualification.installation_date;
 
-        console.log(attr);
+
+        project_title.textContent = data[attr].projects.project_title;
+        project_subtitle.textContent = data[attr].projects.project_subtitle;
+        projects_gmagro_title.textContent = data[attr].projects.projects_gmagro_title;
+        projects_gmagro_description.textContent = data[attr].projects.projects_gmagro_description;
+        projects_tech.textContent = data[attr].projects.projects_tech;
+        projects_demo.textContent = data[attr].projects.projects_demo;
+        projects_code.textContent = data[attr].projects.projects_code;
+        projects_view.textContent = data[attr].projects.projects_view;
+        projects_portfolio_title.textContent = data[attr].projects.projects_portfolio_title;
+        projects_portfolio_description.textContent = data[attr].projects.projects_portfolio_description;
+        projects_tech_2.textContent = data[attr].projects.projects_tech_2;
+        projects_demo_2.textContent = data[attr].projects.projects_demo_2;
+        projects_code_2.textContent = data[attr].projects.projects_code_2;
+        
+
         if (attr == "french") {
-            console.log(attr);
             home_h1.style.fontSize = "60px";
             home_h3.style.fontSize = "40px";
             home_engineer.style.fontSize = "40px";
@@ -177,7 +205,25 @@ var data = {
             "qualification_installation": "Installation de logiciels",
             "qualification_installation_info": "Pour mon deuxième stage, j'ai aidé les clients à installer et à migrer les logiciels fournis par l'entreprise.",
             "installation_date": "janv. 2023 - févr. 2023",
+        },
+
+        "projects":
+        {
+            "project_title": "Projets",
+            "project_subtitle": "Mes plus récents travaux ",
+            "projects_gmagro_title": "Logiciel GMAGRO",
+            "projects_gmagro_description": "Gmagro est un logiciel de GMAO, c'est-à-dire un logiciel de gestion de la maintenance assistée par ordinateur. Il est principalement utilisé par les services et les entreprises dans leurs missions en gérant leurs équipements, leur maintenance et plus encore.",
+            "projects_tech": "// Technologie utilisé",
+            "projects_demo": "// Démo",
+            "projects_code": "Voir le code",
+            "projects_view": "Voir la démo",
+            "projects_portfolio_title": "Ce portfolio",
+            "projects_portfolio_description": "Mon portfolio personnel",
+            "projects_tech_2": "// Technologie utilisé",
+            "projects_demo_2": "// Démo",
+            "projects_code_2": "Voir le code"
         }
+        
 
 
 
@@ -220,6 +266,23 @@ var data = {
             "qualification_installation": "Software installation",
             "qualification_installation_info": "For my second internship, I helped the customers install and migrate the softwares that the company provided.",
             "installation_date": "Jan 2023 - Feb 2023",
+        },
+
+        "projects":
+        {
+            "project_title": "Projects",
+            "project_subtitle": "Most recent works",
+            "projects_gmagro_title": "GMAGRO Desktop Application",
+            "projects_gmagro_description": "Gmagro is a CMMS software aka computerized maintenance management system. It's primary use is to services and companies in their missions by mananging their equipments, maintenance and more",
+            "projects_tech": "// Tech I used",
+            "projects_demo": "// Demo",
+            "projects_code": "See the code",
+            "projects_view": "See the demo",
+            "projects_portfolio_title": "This portfolio",
+            "projects_portfolio_description": "My personal portfolio",
+            "projects_tech_2": "// Tech I used",
+            "projects_demo_2": "// Demo",
+            "projects_code_2": "See the code"
         }
     }
 }
