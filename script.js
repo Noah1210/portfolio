@@ -104,6 +104,9 @@ const contact_gradient = document.querySelector('.contact .contact_gradient');
 const contact_description = document.querySelector('.contact .contact_description');
 const contact_text = document.querySelector('.contact #contact_button');
 
+const success_header = document.querySelector('.contact #success_header');
+const success_info = document.querySelector('.contact #success_info');
+
 
 
 
@@ -175,6 +178,9 @@ link.forEach(el => {
         contact_gradient.textContent = data[attr].contact.contact_gradient;
         contact_description.textContent = data[attr].contact.contact_description;
         contact_text.textContent = data[attr].contact.contact_text;
+
+        success_header.textContent = data[attr].contact.success_header;
+        success_info.textContent = data[attr].contact.success_info;
 
 
 
@@ -262,7 +268,9 @@ var data = {
             "contact_title": "Contactez - moi",
             "contact_gradient": "",
             "contact_description": "Envoyez-moi un mail à pardon.noah12802@gmail.com ou retrouvez-moi sur github et linkedIn.",
-            "contact_text": "Envoyer"
+            "contact_text": "Envoyer",
+            "success_header": "Votre message a bien été envoyé !",
+            "success_info": "Envoyez-moi un mail à pardon.noah12802@gmail.com ou retrouvez-moi sur github et linkedIn."
         }
 
 
@@ -336,7 +344,9 @@ var data = {
             "contact_title": "Get in",
             "contact_gradient": "touch",
             "contact_description": "You can send me an email at pardon.noah12802@gmail.com or find me on github and linkedIn.",
-            "contact_text": "Submit"
+            "contact_text": "Submit",
+            "success_header": "Your message has been successfully submited !",
+            "success_info": "You can send me an email at pardon.noah12802@gmail.com or find me on github and linkedIn."
         }
     }
 
