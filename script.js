@@ -93,6 +93,20 @@ const projects_view = document.querySelector('.projects .projects_view');
 const projects_portfolio_title = document.querySelector('.projects #projects_portfolio_title');
 const projects_portfolio_description = document.querySelector('.projects #projects_portfolio_description');
 
+
+const about_gradient = document.querySelector('.about .about_gradient');
+const about_me = document.querySelector('.about .about_me');
+const about_description = document.querySelector('.about .about_description');
+
+
+const contact_title = document.querySelector('.contact .contact_title');
+const contact_gradient = document.querySelector('.contact .contact_gradient');
+const contact_description = document.querySelector('.contact .contact_description');
+const contact_text = document.querySelector('.contact #contact_button');
+
+
+
+
 link.forEach(el => {
     el.addEventListener('click', () => {
 
@@ -150,7 +164,19 @@ link.forEach(el => {
         projects_tech_2.textContent = data[attr].projects.projects_tech_2;
         projects_demo_2.textContent = data[attr].projects.projects_demo_2;
         projects_code_2.textContent = data[attr].projects.projects_code_2;
-        
+
+
+        about_gradient.textContent = data[attr].about.about_gradient;
+        about_me.textContent = data[attr].about.about_me;
+        about_description.textContent = data[attr].about.about_description;
+
+
+        contact_title.textContent = data[attr].contact.contact_title;
+        contact_gradient.textContent = data[attr].contact.contact_gradient;
+        contact_description.textContent = data[attr].contact.contact_description;
+        contact_text.textContent = data[attr].contact.contact_text;
+
+
 
         if (attr == "french") {
             home_h1.style.fontSize = "60px";
@@ -194,7 +220,7 @@ var data = {
             "qualification_education": "Éducation",
             "qualification_work": "Travail",
             "qualification_computer": "Développeur",
-            "qualification_computer_info": "Je suis actuellement en deuxième année d'études supérieures dans le campus de La Salle à Clermont-Ferrand. J'y étudie actuellement un BTS SIO.",
+            "qualification_computer_info": "Je suis actuellement en deuxième année d'études supérieures dans le campus de La Salle à Clermont-Ferrand. J'y étudie en ce moment un BTS SIO.",
             "qualification_computer_info_2": "Dans lequel je me spécialise dans les solutions logicielles et les applications commerciales.",
             "qualification_high": "Bac",
             "qualification_high_info": "Mon diplôme d'études secondaires que j'ai obtenu en Martinique au lycée Paulette Nardal. Avec pour spécialisation l'informatique.",
@@ -222,9 +248,22 @@ var data = {
             "projects_tech_2": "// Technologie utilisé",
             "projects_demo_2": "// Démo",
             "projects_code_2": "Voir le code"
-        }
-        
+        },
 
+        "about":
+        {
+            "about_gradient": "A propos",
+            "about_me": "",
+            "about_description": "Je suis un développeur en deuxième année de BTS. Au cours de ces deux années je me suis servi de différentes technologies et ai aiguisé mes compétences en back-end et en front-end. La technologie a toujours été une de mes passions et a joué un rôle important dans mon choix de carrière. Voici quelques-uns des outils que je maîtrise."
+        },
+
+        "contact":
+        {
+            "contact_title": "Contactez - moi",
+            "contact_gradient": "",
+            "contact_description": "Envoyez-moi un mail à pardon.noah12802@gmail.com ou retrouvez-moi sur github et linkedIn.",
+            "contact_text": "Envoyer"
+        }
 
 
     },
@@ -253,10 +292,10 @@ var data = {
             "qualification_title": "Qualification",
             "qualification_subtitle": "My journey",
             "qualification_education": "Education",
-            "qualification_work": "Work",
+            "qualification_work": "Experience",
             "qualification_computer": "Computer Engineer",
-            "qualification_computer_info": "I am currently in my second year of higher education at La Salle in France. Where I am currently studying for the French equivalent of a BTEC Higher National Diploma.",
-            "qualification_computer_info_2": "In which I specialize in software solutions and business applications.",
+            "qualification_computer_info": "I am currently in my second year of higher education at La Salle in France. Where I am studying for the French equivalent of a BTEC Higher National Diploma.",
+            "qualification_computer_info_2": "My area of specialization is software solutions and business applications.",
             "qualification_high": "High school Diploma",
             "qualification_high_info": "My high school diploma that I realized in France at Paulette Nardal institute. With computer science as my specialization.",
             "qualification_software": "Software Engineer Internship",
@@ -283,7 +322,23 @@ var data = {
             "projects_tech_2": "// Tech I used",
             "projects_demo_2": "// Demo",
             "projects_code_2": "See the code"
+        },
+
+        "about":
+        {
+            "about_gradient": "About",
+            "about_me": "me",
+            "about_description": "I'm a Software Engineer in my second year of college. During these two years I have been using different technologies and sharpening my skills in back-end and front-end. Technology has always been a passion of mine and played a heavy role in my career choice. Here are some of the tools I'm proficient in."
+        },
+
+        "contact":
+        {
+            "contact_title": "Get in",
+            "contact_gradient": "touch",
+            "contact_description": "You can send me an email at pardon.noah12802@gmail.com or find me on github and linkedIn.",
+            "contact_text": "Submit"
         }
     }
+
 }
 

@@ -652,6 +652,14 @@ display: none;
     -webkit-text-fill-color: transparent;
 }
 
+.about_subtitle{
+    display: flex;
+}
+
+.me h2 {
+    margin-right: 20px;
+}
+
 
 .skills .button {
     height: 55px;
@@ -686,6 +694,14 @@ display: none;
     justify-content: center;
     display: flex;
     flex-direction: column;
+}
+
+.contact_body{
+    display: flex;
+}
+
+.contact_title{
+    margin-right: 20px;
 }
 
 .contact_form h2 {

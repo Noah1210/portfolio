@@ -28,8 +28,8 @@
             <div class="logos">
                 <div class="language_container">
                     <div class="language">
-                        <a  language="english" class="current" id="enSel">English</a>
-                        <a  language="french" class="inactive" id="frSel">Francais</a>
+                        <a language="english" class="current" id="enSel">English</a>
+                        <a language="french" class="inactive" id="frSel">Francais</a>
                     </div>
                     <div class="switch_button"></div>
                 </div>
@@ -78,7 +78,7 @@
                 </button>
 
                 <button type="button" class="button work">
-                    <span class="button_text wowz">Work</span>
+                    <span class="button_text wowz">Experience</span>
                     <span class="button_icon">
                         <i class='bx bxs-briefcase qualification_icon'></i>
                     </span>
@@ -90,11 +90,10 @@
                     <h2 class="qualification_title" id="qualification_computer">Computer Engineer</h2>
                     <div class="qualification_school_p">
                         <p class="qualification_computer_info">I am currently in my second year of higher education at
-                            La Salle in France. Where I am currently
+                            La Salle in France. Where I am
                             studying for the French equivalent of a BTEC Higher National Diploma.
                         </p>
-                        <p class="qualification_computer_info_2">In which I specialize in software solutions and
-                            business applications.
+                        <p class="qualification_computer_info_2">My area of specialization is software solutions and business applications.
                         </p>
                     </div>
                     <i class='bx bxs-calendar calendar_icon'><span class="text">2021 - 2023</span></i>
@@ -148,7 +147,8 @@
                 <img src="images/gmagro.png" alt="" class="project_img">
                 <div class="image_overlay">
                     <div class="image_title" id="projects_gmagro_title">GMAGRO Desktop Application</div>
-                    <p class="image_description" id="projects_gmagro_description">Gmagro is a CMMS software aka computerized maintenance management
+                    <p class="image_description" id="projects_gmagro_description">Gmagro is a CMMS software aka
+                        computerized maintenance management
                         system. It's primary use is to services and companies in their missions by mananging their
                         equipments, maintenance and more </p>
                 </div>
@@ -166,7 +166,8 @@
                     <h3 class="projects_demo">// Demo</h3>
                     <div class="info">
                         <div class="demo_info">
-                            <a href="https://github.com/Noah1210/apGmagroPHP" target="_blank" class="projects_code">See the code
+                            <a href="https://github.com/Noah1210/apGmagroPHP" target="_blank" class="projects_code">See
+                                the code
                                 <i class='bx bxl-github'></i>
                             </a>
                         </div>
@@ -193,7 +194,7 @@
                     <h3 class="projects_tech">// Tech I used</h3>
                     <div class="tech">
                         <div>HTML</div>
-                        <div>CSS</div>  
+                        <div>CSS</div>
                         <div>JAVASCRIPT</div>
                     </div>
                 </div>
@@ -201,8 +202,9 @@
                     <h3 class="projects_demo">// Demo</h3>
                     <div class="info">
                         <div class="demo_info">
-                            <a href="https://github.com/Noah1210/portfolio" target="_blank" class="projects_code">See the code
-                                    
+                            <a href="https://github.com/Noah1210/portfolio" target="_blank" class="projects_code">See
+                                the code
+
                             </a>
                             <i class='bx bxl-github'></i>
                         </div>
@@ -215,9 +217,17 @@
 
     <section class="about" id="about_me">
         <div class="about_container">
+            <!-- <div class="intro_subtitle">
+                <h3 class="software">I'm a Software <h3 class="engineer">Engineer</h3>
+                </h3>
+            </div> -->
             <div class="me">
-                <h2><span class="about_gradient">About </span>me</h2>
-                <p>I'm a Software Engineer in my second year of college. During these two years I have been
+                <div class="about_subtitle">
+                    <h2 class="about_gradient">About <h2 class="about_me">me</h2>
+                    </h2>
+                </div>
+                <p class="about_description">I'm a Software Engineer in my second year of college. During these two
+                    years I have been
                     using different technologies and sharpening my skills in back-end and front-end. Technology has
                     always
                     been a passion of mine and played a heavy role in my career choice. Here are some of the
@@ -252,9 +262,17 @@
             <div class="contact_container">
                 <img src="images/contact.jpg" alt="" class="contact_img">
                 <div class="contact_form">
+                    <!-- <div class="about_subtitle">
+                        <h2 class="about_gradient">About <h2 class="about_me">me</h2>
+                        </h2>
+                    </div> -->
                     <div class="contact_headers">
-                        <h2>Get in <span class="contact_gradient">touch </span></h2>
-                        <p>You can send me an email at pardon.noah12802@gmail.com or find me on github and linkedIn.
+                        <div class="contact_body">
+                            <h2 class="contact_title">Get in <h2 class="contact_gradient" id="contact_grad">touch </h2>
+                            </h2>
+                        </div>
+                        <p class="contact_description">You can send me an email at pardon.noah12802@gmail.com or find me
+                            on github and linkedIn.
                         </p>
                     </div>
                     <form name="contact" method="post" data-netlify="true" onsubmit="submit"
@@ -270,7 +288,7 @@
                             <input type="email" id="mail" name="email" placeholder="Email" required name="email">
                             <input type="text" id="msg" name="message" placeholder="Write a message.." name="message">
                             <button type="submit" class="button contact">
-                                <span class="contact_text">Submit</span>
+                                <span class="contact_text" id="contact_button">Submit</span>
                             </button>
                         </div>
                     </form>

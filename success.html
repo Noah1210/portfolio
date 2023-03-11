@@ -3,6 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -18,13 +19,20 @@
         <nav class="navigation" id="navi">
             <h1 class="name">Noah Pardon</h1>
             <ul class="nav__links">
-                <li class="links"><a href="#home">Home</a></li>
-                <li class="links"><a href="#education">Qualification</a></li>
-                <li class="links"><a href="#project">Projects</a></li>
-                <li class="links"><a href="#about_me">About</a></li>
-                <li class="links"><a href="#contact_me">Contact</a></li>
+                <li class="links"><a class="home" href="#home">Home</a></li>
+                <li class="links"><a class="education" href="#education">Qualification</a></li>
+                <li class="links"><a class="projects" href="#project">Projects</a></li>
+                <li class="links"><a class="about" href="#about_me">About</a></li>
+                <li class="links"><a class="contact" href="#contact_me">Contact</a></li>
             </ul>
             <div class="logos">
+                <div class="language_container">
+                    <div class="language">
+                        <a language="english" class="current" id="enSel">English</a>
+                        <a language="french" class="inactive" id="frSel">Francais</a>
+                    </div>
+                    <div class="switch_button"></div>
+                </div>
                 <a class="github" href="https://github.com/Noah1210" target="_blank"><i class='bx bxl-github'></i><span
                         class="logo">Github</span></a>
                 <a class="linkedin" href="https://www.linkedin.com/in/noah-pardon-9b9275239/"><i
@@ -39,7 +47,10 @@
         <div class="content">
             <div class="intro">
                 <h1>Hi, I'm Noah Pardon</h1>
-                <h3>I'm a Software <span class="engineer">Engineer</span> </h3>
+                <div class="intro_subtitle">
+                    <h3 class="software">I'm a Software <h3 class="engineer">Engineer</h3>
+                    </h3>
+                </div>
             </div>
             <img src="images/headerPicture.jpg" alt="" class="contact_img">
             <div class="arrow">
@@ -60,14 +71,14 @@
         <div class="qualification_container">
             <div class="qualification_tabs">
                 <button type="button" class="button school">
-                    <span class="button_text">Education</span>
+                    <span class="button_text wowzers">Education</span>
                     <span class="button_icon">
                         <i class='bx bxs-graduation qualification_icon'></i>
                     </span>
                 </button>
 
                 <button type="button" class="button work">
-                    <span class="button_text">Work</span>
+                    <span class="button_text wowz">Experience</span>
                     <span class="button_icon">
                         <i class='bx bxs-briefcase qualification_icon'></i>
                     </span>
@@ -76,17 +87,22 @@
 
             <div class="qualification_sections" id="qualification_school">
                 <div class="qualification_info">
-                    <h2 class="qualification_title">Computer Engineer</h2>
-                    <p>I am currently in my second year of higher education at La Salle in France. Where I am currently
-                        studying for the French equivalent of a BTEC Higher National Diploma.
-                        <br> In which I specialize in software solutions and business applications.
-                    </p>
+                    <h2 class="qualification_title" id="qualification_computer">Computer Engineer</h2>
+                    <div class="qualification_school_p">
+                        <p class="qualification_computer_info">I am currently in my second year of higher education at
+                            La Salle in France. Where I am
+                            studying for the French equivalent of a BTEC Higher National Diploma.
+                        </p>
+                        <p class="qualification_computer_info_2">My area of specialization is software solutions and business applications.
+                        </p>
+                    </div>
                     <i class='bx bxs-calendar calendar_icon'><span class="text">2021 - 2023</span></i>
                 </div>
 
                 <div class="qualification_info">
-                    <h2 class="qualification_title">High school Diploma</h2>
-                    <p>My high school diploma that I realized in France at Paulette Nardal institute. With computer
+                    <h2 class="qualification_title" id="qualification_high">High school Diploma</h2>
+                    <p class="qualification_high_info">My high school diploma that I realized in France at Paulette
+                        Nardal institute. With computer
                         science as my specialization.</p>
                     <i class='bx bxs-calendar calendar_icon'><span class="text">2019 - 2021</span></i>
                 </div>
@@ -94,19 +110,28 @@
 
             <div class="qualification_sections" id="qualification_work">
                 <div class="qualification_info">
-                    <h2 class="qualification_title">Software Engineer Internship</h2>
-                    <p>My internship at the company Mboa Digital where I helped in the creation of a timesheet reporting
-                        tool using the company's API sent to the clients each month.
-                        <br>For this purpose I created a full-stack web app using Anuglar and Python Flask
-                    <p>
-                        <i class='bx bxs-calendar calendar_icon'><span class="text">may 2022 - july 2022</span></i>
+                    <h2 class="qualification_title" id="qualification_software">Software Engineer Internship</h2>
+                    <div class="qualification_school_p">
+                        <p class="qualification_software_info">My internship at the company Mboa Digital where I helped
+                            in
+                            the creation of a timesheet reporting
+                            tool using the company's API sent to the clients each month.
+                        </p>
+                        <p class="qualification_software_info_2">For this purpose I created a full-stack web app using
+                            Anuglar and Python Flask.
+                        </p>
+                    </div>
+                    <i class='bx bxs-calendar calendar_icon'><span class="text" id="software_date">may 2022 - july
+                            2022</span></i>
                 </div>
 
                 <div class="qualification_info">
-                    <h2 class="qualification_title">Installation of software</h2>
-                    <p>For my second internship, I helped the customers migrate and install the softwares that the
+                    <h2 class="qualification_title" id="qualification_installation">Software installation</h2>
+                    <p class="qualification_installation_info">For my second internship, I helped the customers migrate
+                        and install the softwares that the
                         company provided. </p>
-                    <i class='bx bxs-calendar calendar_icon'><span class="text">Jan 2023 - Feb 2023</span></i>
+                    <i class='bx bxs-calendar calendar_icon'><span class="text" id="installation_date">Jan 2023 - Feb
+                            2023</span></i>
                 </div>
             </div>
         </div>
@@ -121,15 +146,16 @@
             <div class="project_content grid">
                 <img src="images/gmagro.png" alt="" class="project_img">
                 <div class="image_overlay">
-                    <div class="image_title">GMAGRO Desktop Application</div>
-                    <p class="image_description">Gmagro is a CMMS software aka computerized maintenance management
+                    <div class="image_title" id="projects_gmagro_title">GMAGRO Desktop Application</div>
+                    <p class="image_description" id="projects_gmagro_description">Gmagro is a CMMS software aka
+                        computerized maintenance management
                         system. It's primary use is to services and companies in their missions by mananging their
                         equipments, maintenance and more </p>
                 </div>
             </div>
             <div class="project_info">
                 <div class="techs">
-                    <h3>// Tech I used</h3>
+                    <h3 class="projects_tech">// Tech I used</h3>
                     <div class="tech">
                         <div>JAVA</div>
                         <div>MYSQL</div>
@@ -137,15 +163,16 @@
                     </div>
                 </div>
                 <div class="demo">
-                    <h3>// Demo</h3>
+                    <h3 class="projects_demo">// Demo</h3>
                     <div class="info">
                         <div class="demo_info">
-                            <a href="https://github.com/Noah1210/apGmagroPHP" target="_blank">See the code
+                            <a href="https://github.com/Noah1210/apGmagroPHP" target="_blank" class="projects_code">See
+                                the code
                                 <i class='bx bxl-github'></i>
                             </a>
                         </div>
                         <div class="code_info">
-                            <a href="#" target="_blank">See the demo
+                            <a href="#" target="_blank" class="projects_view">See the demo
                                 <i class='bx bx-link'></i>
                             </a>
                         </div>
@@ -154,17 +181,17 @@
             </div>
         </div>
 
-        <div class="project_container container">
+        <div class="project_container container" id="project_container_2">
             <div class="project_content grid">
                 <img src="images/portfolio.png" alt="" class="project_img">
                 <div class="image_overlay">
-                    <div class="image_title">This portfolio</div>
-                    <p class="image_description">My personal portfolio</p>
+                    <div class="image_title" id="projects_portfolio_title">This portfolio</div>
+                    <p class="image_description" id="projects_portfolio_description">My personal portfolio</p>
                 </div>
             </div>
             <div class="project_info">
                 <div class="techs">
-                    <h3>// Tech I used</h3>
+                    <h3 class="projects_tech">// Tech I used</h3>
                     <div class="tech">
                         <div>HTML</div>
                         <div>CSS</div>
@@ -172,12 +199,14 @@
                     </div>
                 </div>
                 <div class="demo">
-                    <h3>// Demo</h3>
+                    <h3 class="projects_demo">// Demo</h3>
                     <div class="info">
                         <div class="demo_info">
-                            <a href="https://github.com/Noah1210/portfolio" target="_blank">See the code
-                                <i class='bx bxl-github'></i>
+                            <a href="https://github.com/Noah1210/portfolio" target="_blank" class="projects_code">See
+                                the code
+
                             </a>
+                            <i class='bx bxl-github'></i>
                         </div>
 
                     </div>
@@ -188,9 +217,17 @@
 
     <section class="about" id="about_me">
         <div class="about_container">
+            <!-- <div class="intro_subtitle">
+                <h3 class="software">I'm a Software <h3 class="engineer">Engineer</h3>
+                </h3>
+            </div> -->
             <div class="me">
-                <h2><span class="about_gradient">About </span>me</h2>
-                <p>I'm a Software Engineer in my second year of college. During these two years I have been
+                <div class="about_subtitle">
+                    <h2 class="about_gradient">About <h2 class="about_me">me</h2>
+                    </h2>
+                </div>
+                <p class="about_description">I'm a Software Engineer in my second year of college. During these two
+                    years I have been
                     using different technologies and sharpening my skills in back-end and front-end. Technology has
                     always
                     been a passion of mine and played a heavy role in my career choice. Here are some of the
@@ -242,7 +279,10 @@
             <h3>Noah Pardon</h3>
             <div class="footer_socials">
                 <a class="github" href="https://github.com/Noah1210" target="_blank"><i class='bx bxl-github'></i></a>
-                <a class="linkedin" href="https://www.linkedin.com/in/noah-pardon-9b9275239/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                <a class="linkedin" href="https://www.linkedin.com/in/noah-pardon-9b9275239/" target="_blank">
+                    <i class="ri-linkedin-box-fill">
+                    </i>
+                </a>
             </div>
         </div>
     </footer>
@@ -255,4 +295,3 @@
 </body>
 
 </html>
-
