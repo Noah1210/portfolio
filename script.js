@@ -174,15 +174,6 @@ link.forEach(el => {
         about_me.textContent = data[attr].about.about_me;
         about_description.textContent = data[attr].about.about_description;
 
-
-        contact_title.textContent = data[attr].contact.contact_title;
-        contact_gradient.textContent = data[attr].contact.contact_gradient;
-        contact_description.textContent = data[attr].contact.contact_description;
-        contact_text.textContent = data[attr].contact.contact_text;
-        success_header.textContent = data[attr].contact.success_header;
-        success_info.textContent = data[attr].contact.success_info;
-
-
         if (attr == "french") {
             home_h1.style.fontSize = "60px";
             home_h3.style.fontSize = "40px";
@@ -192,6 +183,16 @@ link.forEach(el => {
             home_h3.style.fontSize = "45px";
             home_engineer.style.fontSize = "45px";
         }
+
+        contact_title.textContent = data[attr].contact.contact_title;
+        contact_gradient.textContent = data[attr].contact.contact_gradient;
+        contact_description.textContent = data[attr].contact.contact_description;
+        contact_text.textContent = data[attr].contact.contact_text;
+        success_header.textContent = data[attr].contact.success_header;
+        success_info.textContent = data[attr].contact.success_info;
+
+
+        
     })
 })
 
@@ -269,7 +270,7 @@ var data = {
             "contact_description": "Envoyez-moi un mail à pardon.noah12802@gmail.com ou retrouvez-moi sur github et linkedIn.",
             "contact_text": "Envoyer",
             "success_header": "Votre message a bien été envoyé !",
-            "success_info": "Envoyez-moi un mail à pardon.noah12802@gmail.com ou retrouvez-moi sur github et linkedIn."
+            "success_info": "retrouvez-moi sur github et linkedIn."
         }
 
 
@@ -345,7 +346,7 @@ var data = {
             "contact_description": "You can send me an email at pardon.noah12802@gmail.com or find me on github and linkedIn.",
             "contact_text": "Submit",
             "success_header": "Your message has been successfully submited !",
-            "success_info": "You can send me an email at pardon.noah12802@gmail.com or find me on github and linkedIn."
+            "success_info": "find me on github and linkedIn."
         }
     }
 
