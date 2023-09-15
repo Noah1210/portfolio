@@ -77,6 +77,7 @@ const qualification_software_info_2 = document.querySelector('.qualification .qu
 const software_date = document.querySelector('.qualification #software_date');
 const qualification_installation = document.querySelector('.qualification #qualification_installation');
 const qualification_installation_info = document.querySelector('.qualification .qualification_installation_info');
+const qualification_installation_info_2 = document.querySelector('.qualification .qualification_installation_info_2');
 const installation_date = document.querySelector('.qualification #installation_date');
 
 const project_title = document.querySelector('.projects .project_title');
@@ -104,8 +105,6 @@ const contact_gradient = document.querySelector('.contact .contact_gradient');
 const contact_description = document.querySelector('.contact .contact_description');
 const contact_text = document.querySelector('.contact #contact_button');
 
-const success_header = document.querySelector('.contact #success_header');
-const success_info = document.querySelector('.contact #success_info');
 
 
 
@@ -151,6 +150,7 @@ link.forEach(el => {
         software_date.textContent = data[attr].qualification.software_date;
         qualification_installation.textContent = data[attr].qualification.qualification_installation;
         qualification_installation_info.textContent = data[attr].qualification.qualification_installation_info;
+        qualification_installation_info_2.textContent = data[attr].qualification.qualification_installation_info_2;
         installation_date.textContent = data[attr].qualification.installation_date;
 
 
@@ -178,9 +178,6 @@ link.forEach(el => {
         contact_gradient.textContent = data[attr].contact.contact_gradient;
         contact_description.textContent = data[attr].contact.contact_description;
         contact_text.textContent = data[attr].contact.contact_text;
-
-        success_header.textContent = data[attr].contact.success_header;
-        success_info.textContent = data[attr].contact.success_info;
 
 
 
@@ -225,18 +222,18 @@ var data = {
             "qualification_subtitle": "Mon voyage",
             "qualification_education": "Éducation",
             "qualification_work": "Travail",
-            "qualification_computer": "Développeur",
-            "qualification_computer_info": "Je suis actuellement en deuxième année d'études supérieures dans le campus de La Salle à Clermont-Ferrand. J'y étudie en ce moment un BTS SIO.",
-            "qualification_computer_info_2": "Dans lequel je me spécialise dans les solutions logicielles et les applications commerciales.",
-            "qualification_high": "Bac",
-            "qualification_high_info": "Mon diplôme d'études secondaires que j'ai obtenu en Martinique au lycée Paulette Nardal. Avec pour spécialisation l'informatique.",
-            "qualification_software": "Stage d'ingénieur en logiciel",
-            "qualification_software_info": "Mon stage au sein de la société Mboa Digital où j'ai participé à la création d'un outil de reporting des feuilles de temps en utilisant l'API de la société.",
-            "qualification_software_info_2": "Pour ce faire. J'ai créé une application web full-stack en utilisant Anuglar et Python Flask.",
-            "software_date": "mai 2022 - juill. 2022",
-            "qualification_installation": "Installation de logiciels",
-            "qualification_installation_info": "Pour mon deuxième stage, j'ai aidé les clients à installer et à migrer les logiciels fournis par l'entreprise.",
-            "installation_date": "janv. 2023 - févr. 2023",
+            "qualification_computer": "Développeur informatique",
+            "qualification_computer_info": "Je suis actuellement en train de poursuivre une license en tant que Concepteur Développeur d'Application dans l'école Hesias",
+            "qualification_high": "BTS SIO",
+            "qualification_high_info": "Je possède également un diplôme dans le BTS SIO avec pour spécialisation Solutions Logicielles et Applications Métier",
+            "qualification_software": "Alternance Développeur informatique",
+            "qualification_software_info": "Je suis actuellement engagé dans un cursus en alternance chez Cideco, où je suis activement impliqué dans le développement d'une application web full-stack et d'une application mobile pour l'entreprise.",
+            "qualification_software_info_2": "Pour ce faire, j'utilise la pile technologique de l'entreprise, qui inclut Java, PHP et Kotlin.",
+            "software_date": "Octobre 2023 - Septembre 2024",
+            "qualification_installation": "Stage Développeur informatique",
+            "qualification_installation_info": "Mon stage au sein de la société Mboa Digital où j'ai participé à la création d'un outil de reporting des feuilles de temps en utilisant l'API de la société.",
+            "qualification_installation_info_2": "Pour ce faire. J'ai créé une application web full-stack en utilisant Anuglar et Python Flask.",
+            "installation_date": "mai 2022 - juillet 2022",
         },
 
         "projects":
@@ -244,7 +241,7 @@ var data = {
             "project_title": "Projets",
             "project_subtitle": "Mes plus récents travaux ",
             "projects_gmagro_title": "Logiciel GMAGRO",
-            "projects_gmagro_description": "Gmagro est un logiciel de GMAO, c'est-à-dire un logiciel de gestion de la maintenance assistée par ordinateur. Il est principalement utilisé par les services et les entreprises dans leurs missions en gérant leurs équipements, leur maintenance et plus encore.",
+            "projects_gmagro_description": "Gmagro est une solution de GMAO, acronyme pour Gestion de la Maintenance Assistée par Ordinateur. Principalement dédiée aux entreprises, cette application facilite la gestion de leurs équipements, de leur maintenance, et bien plus encore.",
             "projects_tech": "// Technologie utilisé",
             "projects_demo": "// Démo",
             "projects_code": "Voir le code",
@@ -260,7 +257,7 @@ var data = {
         {
             "about_gradient": "A propos",
             "about_me": "",
-            "about_description": "Je suis un développeur en deuxième année de BTS. Au cours de ces deux années je me suis servi de différentes technologies et ai aiguisé mes compétences en back-end et en front-end. La technologie a toujours été une de mes passions et a joué un rôle important dans mon choix de carrière. Voici quelques-uns des outils que je maîtrise."
+            "about_description": "Je suis un développeur informatique en troisième année de ma licence, spécialisé en tant que Concepteur Développeur d'Applications. Au cours de cette période, j'ai largement utilisé diverses technologies, améliorant continuellement mes compétences. Ma passion pour la technologie a grandement influencé ma carrière. Ci-dessous, je liste quelques-uns des outils dans lesquels je suis compétent."
         },
 
         "contact":
@@ -268,9 +265,7 @@ var data = {
             "contact_title": "Contactez - moi",
             "contact_gradient": "",
             "contact_description": "Envoyez-moi un mail à pardon.noah12802@gmail.com ou retrouvez-moi sur github et linkedIn.",
-            "contact_text": "Envoyer",
-            "success_header": "Votre message a bien été envoyé !",
-            "success_info": "Envoyez-moi un mail à pardon.noah12802@gmail.com ou retrouvez-moi sur github et linkedIn."
+            "contact_text": "Envoyer"
         }
 
 
@@ -292,7 +287,7 @@ var data = {
         {
             "home_h1": "Hi, I'm Noah Pardon",
             "home_h3": "I'm a Software",
-            "home_engineer": "engineer"
+            "home_engineer": "Engineer"
         },
 
         "qualification":
@@ -344,9 +339,7 @@ var data = {
             "contact_title": "Get in",
             "contact_gradient": "touch",
             "contact_description": "You can send me an email at pardon.noah12802@gmail.com or find me on github and linkedIn.",
-            "contact_text": "Submit",
-            "success_header": "Your message has been successfully submited !",
-            "success_info": "You can send me an email at pardon.noah12802@gmail.com or find me on github and linkedIn."
+            "contact_text": "Submit"
         }
     }
 
